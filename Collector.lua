@@ -223,7 +223,8 @@ function Collector:SpellStarted(event,unit,target,guid,spellcast)
 			curSpell = spellcast
 			prevSpell = spellcast
 		end
-		local nodeID = GatherMate:GetIDForNode(spells[prevSpell], target)
+		-- target can be secret (e.g. in delves), fall back to the tooltip in that case
+		local nodeID = not issecretvalue(target) and GatherMate:GetIDForNode(spells[prevSpell], target)
 		if nodeID then -- seem 2.4 has the node name now as the target
 			self:addItem(prevSpell,target)
 			foundTarget = true

@@ -524,7 +524,9 @@ end
 	Node id function forward and reverse
 ]]
 function GatherMate:GetIDForNode(type, name)
-	return self.nodeIDs[type][name]
+	if issecretvalue(name) or name == nil then return end
+	local ids = self.nodeIDs[type]
+	return ids and ids[name]
 end
 --[[
 	Get the name for a nodeID
