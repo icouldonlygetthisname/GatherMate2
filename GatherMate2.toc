@@ -1,4 +1,4 @@
-## Interface: 16001,120100,120105
+## Interface: 16001,120105,120107
 ## Notes: Collects Herbs, Mines, Gas Clouds, Archaeology, Treasure and Fishing locations and adds them to the worldmap and minimap
 ## Notes-frFR: Enregistre les positions des herbes, mines, nuages de gaz et poissons et les ajoute sur la carte du monde et la minicarte.
 ## Notes-ruRU: Собирает информацию о расположении трав, руды, газовых облаков и рыбных мест и показывает её на карте и миникарте
@@ -60,6 +60,18 @@ Locales\GatherMate2-zhTW.lua [AllowLoadTextLocale zhTW]
 Locales\GatherMate2-ruRU.lua [AllowLoadTextLocale ruRU]
 Locales\GatherMate2-ptBR.lua [AllowLoadTextLocale ptBR]
 Locales\GatherMate2-itIT.lua [AllowLoadTextLocale itIT]
+
+Locales\Vanilla\GatherMate2-Vanilla-enUS.lua [AllowLoadTextLocale enUS][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-esES.lua [AllowLoadTextLocale esES][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-esMX.lua [AllowLoadTextLocale esMX][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-frFR.lua [AllowLoadTextLocale frFR][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-deDE.lua [AllowLoadTextLocale deDE][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-koKR.lua [AllowLoadTextLocale koKR][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-zhCN.lua [AllowLoadTextLocale zhCN][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-zhTW.lua [AllowLoadTextLocale zhTW][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-ruRU.lua [AllowLoadTextLocale ruRU][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-ptBR.lua [AllowLoadTextLocale ptBR][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
+Locales\Vanilla\GatherMate2-Vanilla-itIT.lua [AllowLoadTextLocale itIT][AllowLoadGameType camelot, forever][ExcludeLoadGameType standard]
 
 ## Order is important
 GatherMate2.lua
