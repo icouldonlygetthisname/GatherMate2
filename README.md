@@ -61,3 +61,16 @@ Limits of the local build:
 - `GatherMate2_Data` isn't installed, so the Forever database starts empty and fills as you gather. The data addon has nothing for Forever: Forever uses the Classic Era uiMapIDs (Elwynn Forest `1429`, The Barrens `1413`), and none of its ~240,000 nodes are on those maps. Its vanilla-zone data uses retail map IDs and post-Cataclysm spawn points, so remapping the IDs wouldn't make it correct. Its TOC doesn't list `16001` either, so the Import page shows it as unavailable.
 
 Once upstream tags a release that contains `6b4b54b`, use the official package instead.
+
+### Forever-only nodes (`Constants.lua`, marked `-- [forever patch]`)
+
+Forever adds mining nodes that retail and Classic don't have. GatherMate2 only records names it knows, so these are added locally with IDs `1900`+, well above upstream's range (up to `1250`), so a future upstream ID can't collide with saved data. Each one is in `node_ids`, `node_textures` and `node_expansion` (as `CLASSIC`).
+
+| ID | Node | Where | Source |
+|---|---|---|---|
+| 1900 | Large Chunk of Amber | Teldrassil, gives Copper Ore | seen in game |
+| 1901 | Chunk of Amber | Teldrassil, gives Copper Ore | Wowhead Forever object list (via search) |
+| 1902 | Poor Copper Vein | starting areas, gives Copper Ore | [wow-professions mining changes](https://www.wow-professions.com/forever/mining-changes) |
+| 1903 | Heavy Thorium Vein | Mount Hyjal, gives Heavy Thorium Ore | [wow-professions mining changes](https://www.wow-professions.com/forever/mining-changes) |
+
+Forever's three new endgame herbs aren't added yet; their node names weren't found. If upstream adds any of these nodes itself, drop the local entry and migrate saved IDs (or keep both names on upstream's ID).
