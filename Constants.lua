@@ -203,6 +203,7 @@ local node_ids = {
 		["Lesser Bloodstone Deposit"] 		= 218,
 		["Incendicite Mineral Vein"] 		= 219,
 		["Indurium Mineral Vein"]			= 220,
+		["Large Chunk of Amber"]			= 1900, -- [forever patch] WoW Forever only (Teldrassil), local ID out of upstream's range
 -- bc nodes
 		["Fel Iron Deposit"] 				= 221,
 		["Adamantite Deposit"] 				= 222,
@@ -1069,6 +1070,7 @@ local node_textures = {
 		[1248] = icon_path.."Mine\\refulgentcopper.tga",
 		[1249] = icon_path.."Mine\\umbraltin.tga",
 		[1250] = icon_path.."Mine\\umbraltin.tga",
+		[1900] = icon_path.."Mine\\copper.tga", -- [forever patch] Large Chunk of Amber
 	},
 	["Extract Gas"] = {
 		[301] = icon_path.."Gas\\windy_cloud.tga",
@@ -1430,6 +1432,7 @@ local node_expansion = {
 		[1248] = MN,
 		[1249] = MN,
 		[1250] = MN,
+		[1900] = CLASSIC, -- [forever patch] Large Chunk of Amber
 	},
 	["Herb Gathering"] = {
 		[401] = CLASSIC,
