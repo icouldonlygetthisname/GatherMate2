@@ -203,7 +203,11 @@ local node_ids = {
 		["Lesser Bloodstone Deposit"] 		= 218,
 		["Incendicite Mineral Vein"] 		= 219,
 		["Indurium Mineral Vein"]			= 220,
-		["Large Chunk of Amber"]			= 1900, -- [forever patch] WoW Forever only (Teldrassil), local ID out of upstream's range
+		-- [forever patch] WoW Forever only nodes, local IDs out of upstream's range
+		["Large Chunk of Amber"]			= 1900, -- Teldrassil, gives Copper Ore
+		["Chunk of Amber"]					= 1901, -- Teldrassil, gives Copper Ore
+		["Poor Copper Vein"]				= 1902, -- starting areas, gives Copper Ore
+		["Heavy Thorium Vein"]				= 1903, -- Mount Hyjal, gives Heavy Thorium Ore
 -- bc nodes
 		["Fel Iron Deposit"] 				= 221,
 		["Adamantite Deposit"] 				= 222,
@@ -1070,7 +1074,11 @@ local node_textures = {
 		[1248] = icon_path.."Mine\\refulgentcopper.tga",
 		[1249] = icon_path.."Mine\\umbraltin.tga",
 		[1250] = icon_path.."Mine\\umbraltin.tga",
-		[1900] = icon_path.."Mine\\copper.tga", -- [forever patch] Large Chunk of Amber
+		-- [forever patch] WoW Forever only nodes
+		[1900] = icon_path.."Mine\\copper.tga", -- Large Chunk of Amber
+		[1901] = icon_path.."Mine\\copper.tga", -- Chunk of Amber
+		[1902] = icon_path.."Mine\\copper.tga", -- Poor Copper Vein
+		[1903] = icon_path.."Mine\\rich_thorium.tga", -- Heavy Thorium Vein
 	},
 	["Extract Gas"] = {
 		[301] = icon_path.."Gas\\windy_cloud.tga",
@@ -1432,7 +1440,11 @@ local node_expansion = {
 		[1248] = MN,
 		[1249] = MN,
 		[1250] = MN,
-		[1900] = CLASSIC, -- [forever patch] Large Chunk of Amber
+		-- [forever patch] WoW Forever only nodes
+		[1900] = CLASSIC,
+		[1901] = CLASSIC,
+		[1902] = CLASSIC,
+		[1903] = CLASSIC,
 	},
 	["Herb Gathering"] = {
 		[401] = CLASSIC,
