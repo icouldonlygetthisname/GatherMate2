@@ -70,7 +70,8 @@ Forever adds mining nodes that retail and Classic don't have. GatherMate2 only r
 |---|---|---|---|
 | 1900 | Large Chunk of Amber | Teldrassil, gives Copper Ore | seen in game |
 | 1901 | Chunk of Amber | Teldrassil, gives Copper Ore | Wowhead Forever object list (via search) |
-| 1902 | Poor Copper Vein | starting areas, gives Copper Ore | [wow-professions mining changes](https://www.wow-professions.com/forever/mining-changes) |
 | 1903 | Heavy Thorium Vein | Mount Hyjal, gives Heavy Thorium Ore | [wow-professions mining changes](https://www.wow-professions.com/forever/mining-changes) |
 
 Forever's three new endgame herbs aren't added yet; their node names weren't found. If upstream adds any of these nodes itself, drop the local entry and migrate saved IDs (or keep both names on upstream's ID).
+
+Upstream `691cbe8` (1.52.5) added Forever's early-game variants: "Poor Copper Vein" counts as Copper Vein (201), and "Wilted Peacebloom" and "Stunted Silverleaf" count as Peacebloom (401) and Silverleaf (402). The local `1902` "Poor Copper Vein" was dropped then. With both, the name would map to 201 or 1902 depending on `pairs` order in `GatherMate2.lua`. Saved `1902` nodes should be changed to `201` in `GatherMate2MineDB`, with the game closed.

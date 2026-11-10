@@ -211,7 +211,6 @@ local node_ids = {
 		-- [forever patch] WoW Forever only nodes, local IDs out of upstream's range
 		["Large Chunk of Amber"]			= 1900, -- Teldrassil, gives Copper Ore
 		["Chunk of Amber"]					= 1901, -- Teldrassil, gives Copper Ore
-		["Poor Copper Vein"]				= 1902, -- starting areas, gives Copper Ore
 		["Heavy Thorium Vein"]				= 1903, -- Mount Hyjal, gives Heavy Thorium Ore
 -- bc nodes
 		["Fel Iron Deposit"] 				= 221,
@@ -1092,7 +1091,6 @@ local node_textures = {
 		-- [forever patch] WoW Forever only nodes
 		[1900] = icon_path.."Mine\\copper.tga", -- Large Chunk of Amber
 		[1901] = icon_path.."Mine\\copper.tga", -- Chunk of Amber
-		[1902] = icon_path.."Mine\\copper.tga", -- Poor Copper Vein
 		[1903] = icon_path.."Mine\\rich_thorium.tga", -- Heavy Thorium Vein
 	},
 	["Extract Gas"] = {
@@ -1458,7 +1456,6 @@ local node_expansion = {
 		-- [forever patch] WoW Forever only nodes
 		[1900] = CLASSIC,
 		[1901] = CLASSIC,
-		[1902] = CLASSIC,
 		[1903] = CLASSIC,
 	},
 	["Herb Gathering"] = {
